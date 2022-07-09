@@ -8,14 +8,17 @@ public class Structure {
 		Scanner scan = new Scanner(System.in);
 		
 		int a, b, c, d, sum, difference, ra;
+		int pieceCode, amount ;
 		double workHours;
 		double valueHours;
 		double salary;
 		double PI = 3.14159;
 		double raio;
 		double area;
+		double pieceValue;
+		double amountToPay;
 			
-		System.out.println("Digite um número de 1 a dez para escolher a formula");
+		System.out.println("Digite um número de 1 a 6 para escolher a formula");
 		int number = scan.nextInt();
 		switch(number) {
 		case 1:
@@ -55,10 +58,23 @@ public class Structure {
 			System.out.println("número do funcionário = " + ra);
 			System.out.printf("Salário = R$ %.2f", salary);
 			break;
+		case 5:
+			System.out.println("Digite o código da peça: ");
+			pieceCode = scan.nextInt();
+			System.out.println("Digite a quantidade de peças: ");
+			amount = scan.nextInt();
+			System.out.println("Digite o valor da peça unitária: ");
+			pieceValue = scan.nextDouble();
+			amountToPay = amount * pieceValue;
 			
+			System.out.printf("Valor a pagar: R$ %.2f", amountToPay);
+			break;
+		default:
+			String number01 = "número invalido!";
+			System.out.println(number01);
 		}
 		
-		
+		scan.close();
 	}
 
 }
