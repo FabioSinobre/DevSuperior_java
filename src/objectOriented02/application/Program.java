@@ -6,7 +6,7 @@ import java.util.Scanner;
 import objectOriented02.entiti.Product;
 
 public class Program {
-
+	
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
