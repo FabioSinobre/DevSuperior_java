@@ -29,7 +29,6 @@ Programação funcional e expressões lambda, Stream API
 
 Manipulação de arquivos
 <hr>
-
 As principais ferramentas e frameworks para se trabalhar com Java profissionalmente no mercado, tais como:
 
 JDBC para acesso a dados baseado em SQL
